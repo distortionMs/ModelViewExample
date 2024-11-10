@@ -4,19 +4,19 @@
 #include <QWidget>
 #include <QTableView>
 
-// #include "StudentsModel.h"
+#include "StudentsModel.h"
 
 MainWindow::MainWindow()
 {
-	// QWidget *centralWidget = new QWidget;
-	// QVBoxLayout *centralWidgetLayout = new QVBoxLayout(centralWidget);
+	QWidget *centralWidget = new QWidget;
+	QVBoxLayout *centralWidgetLayout = new QVBoxLayout(centralWidget);
 
-	// QTableView* view = new QTableView;
-	// StudetnsModel* model = new StudetnsModel;
-	// view->setModel(model);
-	// centralWidgetLayout->addWidget(view);
+	QTableView* view = new QTableView;
+	StudetnsModel* model = new StudetnsModel;
+	view->setModel(model);
+	centralWidgetLayout->addWidget(view);
 	
-	// centralWidget->setLayout(centralWidgetLayout);
-	// setCentralWidget(centralWidget);
-	// setMinimumSize(600, 500);
+	centralWidget->setLayout(centralWidgetLayout);
+	setCentralWidget(centralWidget);
+	setMinimumSize(600, 500);
 }
